@@ -5,7 +5,7 @@
 # Configuration shared between all environments:
 defaults: &defaults
   # The domain from where your app is served
-  app_domain: localhost
+  app_domain: hub.benchmedia.co.uk
 
   # How many activities should activity feeds display?
   activities_per_page: 25
@@ -51,11 +51,11 @@ defaults: &defaults
   # With Heroku and the Sendgrid add-on, no configuration is needed here.
   #   $ heroku addons:add sendgrid:free
   smtp_settings:
-    :domain:         domain.com         # the domain your emails will come from
-    :address:        smtp.sendgrid.net  # SMTP server used to send emails
+    :domain:         hub.benchmedia.co.uk         # the domain your emails will come from
+    :address:        smtp.karoo.co.uk  # SMTP server used to send emails
     :port:           25
     :authentication: :plain
-    :user_name:      USER
+    :user_name:      USERNAME
     :password:       PASSWORD
 
     # Set to true when using Gmail
@@ -86,7 +86,7 @@ defaults: &defaults
   tracking_enabled: true
 
   # Destination where your users could write to ask for help. Accepts an email or website.
-  support: http://help.teambox.com
+  support: adam@benchmedia.co.uk
 
   help_url: http://help.teambox.com/faqs/using-teambox
   support_url: http://teambox.com/community
